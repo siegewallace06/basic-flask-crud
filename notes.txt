@@ -35,3 +35,19 @@ For those of you who faced the database creation error, do the following:
 >>> from app import app, db
 >>> app.app_context().push()
 >>> db.create_all()
+
+=====================
+Deploy to Heroku
+=====================
+> Install heroku cli
+
+> Login with Heroku
+
+> Install gunicorn
+pip install gunicorn
+
+> Freeze the dependencies
+pip freeze > requirements.txt
+
+> Create Heroku App
+heroku create flask-crud-app

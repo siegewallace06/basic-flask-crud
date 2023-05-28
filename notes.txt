@@ -1,0 +1,15 @@
+=====================
+Introduction
+=====================
+> Setup Virtual Environment
+virtualenv env
+(env is the convention name for virtual environment)
+
+> Activate Virtual Environment (or install Powershell extension for VSCode)
+.\env\Scripts\activate
+
+> Dependencies
+pip install flask flask-sqlalchemy
+
+> Run
+python app.py

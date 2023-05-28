@@ -13,3 +13,25 @@ pip install flask flask-sqlalchemy
 
 > Run
 python app.py
+
+> Deactivate Virtual Environment
+deactivate
+
+=====================
+DB Setup
+=====================
+Step to create DB
+> Access the python shell
+python
+
+> Run this:
+from app import app, db
+
+with app.app_context():
+    db.create_all()
+
+For those of you who faced the database creation error, do the following: 
+
+>>> from app import app, db
+>>> app.app_context().push()
+>>> db.create_all()
